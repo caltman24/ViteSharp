@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <Compile Remove="Views\Shared\NewFolder\**" />
+    <Content Remove="Views\Shared\NewFolder\**" />
+    <EmbeddedResource Remove="Views\Shared\NewFolder\**" />
+    <None Remove="Views\Shared\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ViteSharp\ViteSharp.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>vite_dotnet_demo</RootNamespace>
+  </PropertyGroup>
+
+  <Target Name="Build React App" BeforeTargets="BeforePublish">
+    <Exec Command="npm run build --prefix ReactApp" />
+  </Target>
+
+</Project>

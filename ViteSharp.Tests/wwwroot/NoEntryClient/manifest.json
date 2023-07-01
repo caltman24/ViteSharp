@@ -1,0 +1,20 @@
+{
+  "src/assets/react.svg": {
+    "file": "assets/react-35ef61ed.svg",
+    "src": "src/assets/react.svg"
+  },
+  "src/main.css": {
+    "file": "assets/main-d526a0c5.css",
+    "src": "src/main.css"
+  },
+  "src/main.tsx": {
+    "assets": [
+      "assets/react.svg"
+    ],
+    "css": [
+      "assets/main.css"
+    ],
+    "file": "assets/main.js",
+    "src": "src/main.tsx"
+  }
+}
